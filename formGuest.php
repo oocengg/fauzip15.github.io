@@ -1,0 +1,80 @@
+\<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registrasi ABASMANSA</div>
+        <div class="content">
+            <form action="insertGuest.php" method="get">
+                <div class="user-details">
+                    <div class="input-box" style="width: 100%;">
+                        <span class="details">ID Anggota</span>
+                        <input type="text" name="id" placeholder="Masukkan ID dari Panitia" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nama</span>
+                        <input type="text" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Agama</span>
+                        <input type="text" name="agama" placeholder="Masukkan Agama" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Umur</span>
+                        <input type="text" name="umur" placeholder="Masukkan Umur" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">No. HP</span>
+                        <input type="text" name="nohp" placeholder="Masukkan No. HP Aktif" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="email" placeholder="Masukkan Email Aktif" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Alamat</span>
+                        <input type="text" name="alamat" placeholder="Masukkan Alamat" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1" value="Pria">
+                    <input type="radio" name="gender" id="dot-2" value="Wanita">
+                    <input type="radio" name="gender" id="dot-3" value="-">
+                    <span class="gender-title">Jenis Kelamin</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Pria</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Wanita</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Memilih untuk tidak mengutarakan.</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <div class="input-box" style="width: 100%;">
+                        <span class="details">Alasan Memasuki Organisasi</span>
+                        <textarea name="alasan" cols="30" rows="10" placeholder="Masukkan Alasan" required></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
